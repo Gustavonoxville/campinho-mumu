@@ -1,42 +1,31 @@
 import React, { useState , useEffect } from 'react';
 import { DndProvider, useDrag, useDrop } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
-import campoImage from './field2.svg';
-import campoImage2 from './field4.svg';
+import campoImage from './field4.svg';
 
 import capasso from './jogadores/capasso.png';
 import jv from './jogadores/jv.png';
-import barros from './jogadores/barros.png';
 import cocao from './jogadores/cocao.png';
-import erick from './jogadores/erick.png';
-import rojas from './jogadores/rojas.png';
 import pablo from './jogadores/pablo.png';
-import keiller from './jogadores/keiller.png';
+import fuzato25 from './jogadores/fuzato25.png';
 import jair from './jogadores/jair.png';
 import jardim from './jogadores/jardim.png';
-import juliao from './jogadores/juliao.png';
-import leo from './jogadores/leo.png';
-import maicon from './jogadores/maicon.png';
-import medel from './jogadores/medel.png';
 import lgus from './jogadores/lg.png';
 import ly from './jogadores/ly.png';
 import paulinho from './jogadores/paulinho.png';
 import payet from './jogadores/payet.png';
-import praxedes from './jogadores/praxedes.png';
+import lucca from './jogadores/lucca.png';
 import ph from './jogadores/ph.png';
 import piton from './jogadores/piton.png';
 import puma from './jogadores/puma.png';
 import rayan from './jogadores/rayan.png';
 import jpm from './jogadores/jpm.png';
-import rossi from './jogadores/rossi.png';
+import tche25 from './jogadores/tche25.png';
 import adson from './jogadores/adson.png';
 import serginho from './jogadores/serginho.png';
-import mumu from './jogadores/mumu.png';
 import vegetti from './jogadores/vegetti.png';
 import zegabriel from './jogadores/zegabriel.png';
-import zevitor from './jogadores/zevitor.png';
 import semft from './jogadores/semft.png';
-import digao from './jogadores/digao.png';
 import c1 from './jogadores/1.svg';
 import c2 from './jogadores/2.svg';
 import c3 from './jogadores/3.svg';
@@ -61,16 +50,11 @@ import v10 from './jogadores/numbers2/10.svg';
 import v11 from './jogadores/numbers2/11.svg';
 import david from './jogadores/david.png';
 import sforza from './jogadores/sforza.png';
-import lucho from './jogadores/lucho.png';
-import galdames from './jogadores/galdames.png';
 import leandrinho from './jogadores/leandrinho.png';
 import estrella from './jogadores/estrella.png';
 import victorl from './jogadores/victorl.png';
 import lucase from './jogadores/lucase.png';
-import andres from './jogadores/andres.png';
-import clayton from './jogadores/clayton.png';
 import hugo from './jogadores/hugo.png';
-import serjao from './jogadores/serjao.png';
 import couto from './jogadores/couto.png';
 import texeira from './jogadores/texeira.png';
 import souza from './jogadores/souza.png';
@@ -78,6 +62,12 @@ import gb from './jogadores/gb.png';
 import emerson from './jogadores/emerson.png';
 import jean from './jogadores/jean.png';
 import max from './jogadores/max.png';
+import riquelme from './jogadores/riquelme.png';
+import brunol from './jogadores/brunol.png';
+import alegria from './jogadores/alegria.png';
+import oliveira from './jogadores/oliveira.png';
+import freitas from './jogadores/freitas.png';
+import pr from './jogadores/pr.png';
 
 const containerStyle = {
   width: '1550px',
@@ -104,50 +94,50 @@ const ItemTypes = {
 
 const playersList = [
   { id: 1, nome: "Jardim", imagem: jardim, hasBorder: true, hasNumber: true, number: 1},
-  { id: 2, nome: "Keiller", imagem: keiller , hasBorder: true, hasNumber: true, number: 13},
+  { id: 2, nome: "Fuzato", imagem: fuzato25 , hasBorder: true, hasNumber: true, number: 13},
   { id: 3, nome: "Pablo", imagem: pablo, hasBorder: true, hasNumber: true, number: 37},
+  { id: 5, nome: "J. Victor", imagem: jv, hasBorder: true, hasNumber: true, number: 38},
+  { id: 6, nome: "Capasso", imagem: capasso, hasBorder: true, hasNumber: true, number: 22},
+  { id: 7, nome: "Oliveira", imagem: oliveira , hasBorder: true, hasNumber: true, number: 3},
+  { id: 4, nome: "Freitas", imagem: freitas, hasBorder: true, hasNumber: true, number: 4},
+  { id: 65, nome: "Souza", imagem: souza, hasBorder: true, hasNumber: true, number: 5},
   { id: 64, nome: "Lyncon", imagem: ly, hasBorder: true, hasNumber: true, number: 33},
   { id: 16, nome: "L. Gustavo", imagem: lgus, hasBorder: true, hasNumber: true, number: 44},
-  { id: 4, nome: "Maicon", imagem: maicon, hasBorder: true, hasNumber: true, number: 4},
-  { id: 5, nome: "J. Victor", imagem: jv, hasBorder: true, hasNumber: true, number: 38},
-  { id: 7, nome: "Léo", imagem: leo , hasBorder: true, hasNumber: true, number: 3},
-  /*{ id: 6, nome: "Capasso", imagem: capasso, hasBorder: true, hasNumber: true, number: 22},*/
   /*{ id: 8, nome: "Zé Vitor", imagem: zevitor, hasBorder: true, hasNumber: true, number: 44},*/
   /*{ id: 9, nome: "Miranda", imagem: miranda , hasBorder: true, hasNumber: true, number: 35},*/
-  { id: 12, nome: "R. Rojas", imagem: rojas, hasBorder: true, hasNumber: true, number: 32},
   { id: 10, nome: "Puma", imagem: puma, hasBorder: true, hasNumber: true, number: 2},
   { id: 11, nome: "PH", imagem: ph , hasBorder: true, hasNumber: true, number: 96},
+  { id: 12, nome: "Paulo Ricardo", imagem: pr, hasBorder: true, hasNumber: true, number: 32},
   { id: 14, nome: "Piton", imagem: piton, hasBorder: true, hasNumber: true, number: 6},
   { id: 24, nome: "Victor L.", imagem: victorl, hasBorder: true, hasNumber: true, number: 12},
-  /*{ id: 13, nome: "Julião", imagem: juliao, hasBorder: true, hasNumber: true, number: 26},*/
   { id: 69, nome: "Leandrinho", imagem: leandrinho, hasBorder: true, hasNumber: true, number: 66},
+  { id: 13, nome: "Riquelme", imagem: riquelme, hasBorder: true, hasNumber: true, number: 36},
   { id: 18, nome: "Lucas E.", imagem: lucase, hasBorder: true, hasNumber: true, number: 58},
-  /*{ id: 19, nome: "Zé Gabriel", imagem: zegabriel, hasBorder: true, hasNumber: true, number: 23},*/
+  { id: 19, nome: "Zé Gabriel", imagem: zegabriel, hasBorder: true, hasNumber: true, number: 23},
   { id: 61, nome: "Hugo M.", imagem: hugo, hasBorder: true, hasNumber: true, number: 25}, 
-  { id: 65, nome: "Souza", imagem: souza, hasBorder: true, hasNumber: true, number: 5},
   { id: 15, nome: "JP Murilo", imagem: jpm , hasBorder: true, hasNumber: true, number: 98},
   { id: 17, nome: "M. Cocão", imagem: cocao , hasBorder: true, hasNumber: true, number: 85},
-  { id: 67, nome: "Galdames", imagem: galdames, hasBorder: true, hasNumber: true, number: 27},
+  { id: 67, nome: "De Lucca", imagem: lucca, hasBorder: true, hasNumber: true, number: 27},
   { id: 29, nome: "Sforza", imagem: sforza, hasBorder: true, hasNumber: true, number: 20},
   { id: 62, nome: "Estrella", imagem: estrella, hasBorder: true, hasNumber: true, number: 14},
   { id: 20, nome: "Payet", imagem: payet, hasBorder: true, hasNumber: true, number: 10},
   { id: 73, nome: "Maxime", imagem: max, hasBorder: true, hasNumber: true, number: 26},
-  /*{ id: 21, nome: "Praxedes", imagem: praxedes, hasBorder: true, hasNumber: true, number: 21},*/
+  { id: 21, nome: "Tchê Tchê", imagem: tche25, hasBorder: true, hasNumber: true, number: 21},
   { id: 22, nome: "Paulinho", imagem: paulinho, hasBorder: true, hasNumber: true, number: 18},
   { id: 23, nome: "Jair", imagem: jair, hasBorder: true, hasNumber: true, number: 8},
-  { id: 25, nome: "Rossi", imagem: rossi , hasBorder: true, hasNumber: true, number: 31},
-  { id: 26, nome: "Vegetti", imagem: vegetti, hasBorder: true, hasNumber: true, number: 99},
-  { id: 27, nome: "Adson", imagem: adson, hasBorder: true, hasNumber: true, number: 28},
-  /*{ id: 28, nome: "Serginho", imagem: serginho, hasBorder: true, hasNumber: true, number: 70},*/
-  { id: 31, nome: "Rayan", imagem: rayan, hasBorder: true, hasNumber: true, number: 77},
-   /*{ id: 32, nome: "Erick M.", imagem: erick, hasBorder: true, hasNumber: true, number: 16},*/
-  { id: 33, nome: "David", imagem: david, hasBorder: true, hasNumber: true, number: 7},
-  /*{ id: 68, nome: "Clayton", imagem: clayton, hasBorder: true, hasNumber: true, number: 9},*/
-  { id: 68, nome: "Emerson", imagem: emerson, hasBorder: true, hasNumber: true, number: 17},
   { id: 63, nome: "Coutinho", imagem: couto, hasBorder: true, hasNumber: true, number: 11},
+  { id: 27, nome: "Adson", imagem: adson, hasBorder: true, hasNumber: true, number: 28},
+  { id: 26, nome: "Vegetti", imagem: vegetti, hasBorder: true, hasNumber: true, number: 99},
+  { id: 31, nome: "Rayan", imagem: rayan, hasBorder: true, hasNumber: true, number: 77},
+  /*{ id: 32, nome: "Erick M.", imagem: erick, hasBorder: true, hasNumber: true, number: 16},*/
+  /*{ id: 33, nome: "David", imagem: david, hasBorder: true, hasNumber: true, number: "❌"},*/
+  { id: 68, nome: "Alegria", imagem: alegria, hasBorder: true, hasNumber: true, number: 16},
+  { id: 74, nome: "Emerson", imagem: emerson, hasBorder: true, hasNumber: true, number: 17},
   { id: 70, nome: "Texeira", imagem: texeira, hasBorder: true, hasNumber: true, number:90},
+  { id: 25, nome: "Bruno L.", imagem: brunol , hasBorder: true, hasNumber: true, number: 72},
   { id: 71, nome: "GB", imagem: gb, hasBorder: true, hasNumber: true, number:19},
   { id: 72, nome: "Jean David", imagem: jean, hasBorder: true, hasNumber: true, number: 21},
+  { id: 28, nome: "Serginho", imagem: serginho, hasBorder: true, hasNumber: true, number: 70},
   /*{ id: 66, nome: "André Silva", imagem: andres, hasBorder: true, hasNumber: false, number: 11},*/
   /*{ id: 34, nome: "Klopp", imagem: serjao, hasBorder: true, hasNumber: false, number: 11},*/
   { id: 35, nome: "", imagem: semft,hasBorder: false, hasNumber: false, number: 0},
@@ -155,6 +145,7 @@ const playersList = [
   { id: 37, nome: "", imagem: semft,hasBorder: false, hasNumber: false, number: 0},
   { id: 38, nome: "", imagem: semft,hasBorder: false, hasNumber: false, number: 0},
   { id: 30, nome: "", imagem: semft,hasBorder: false, hasNumber: false, number: 0},
+  { id: 33, nome: "David", imagem: david, hasBorder: true, hasNumber: true, number: "❌"},
   { id: 39, nome: "", imagem: c1, hasBorder: true, hasNumber: false, number: 0},
   { id: 40, nome: "", imagem: c2, hasBorder: true, hasNumber: false, number: 0},
   { id: 41, nome: "", imagem: c3, hasBorder: true, hasNumber: false, number: 0},
@@ -177,9 +168,6 @@ const playersList = [
   { id: 58, nome: "", imagem: v9, hasBorder: true, hasNumber: false, number: 0},
   { id: 59, nome: "", imagem: v10, hasBorder: true, hasNumber: false, number: 0},
   { id: 60, nome: "", imagem: v11, hasBorder: true, hasNumber: false, number: 0},
-  /*{ id: 61, nome: "Coronado *ESPECULAÇÃO*", imagem: coronado, hasBorder: true, hasNumber: false, number: "?"},*/
-  /*{ id: 63, nome: "Allan *ESPECULAÇÃO*", imagem: allan, hasBorder: true, hasNumber: false, number: "?"},*/
-  /*{ id: 64, nome: "Lucho *ESPECULAÇÃO*", imagem: lucho, hasBorder: true, hasNumber: false, number: "?"},*/
  
 ];
 
@@ -280,7 +268,7 @@ const DraggablePlayer = ({ id, left, top, name, image, hasBorder, hasNumber, num
   );
 };
 
-const Field = ({ campoImagem }) => {
+const Field = () => {
   const [players, setPlayers] = useState(playerData);
 
   const [, drop] = useDrop({
@@ -306,7 +294,7 @@ const Field = ({ campoImagem }) => {
       ref={drop}
       style={{
         ...containerStyle,
-        backgroundImage: `url(${campoImagem})`,
+        backgroundImage: `url(${campoImage})`,
         backgroundSize: 'cover',
       }}
     >
@@ -330,28 +318,10 @@ function App() {
     document.body.style.background = "rgb(0, 96, 0)";
   }, []);
 
- const trocarImagem = () => {
-    setCampoImagem((prevImagem) => (prevImagem === campoImage ? campoImage2 : campoImage));
-  };
-
   return (
      <div className="App" style={{ backgroundColor: 'rgb(0, 96, 0)', margin: 0, padding: 0, overflow: 'hidden' }}>
       <DndProvider backend={HTML5Backend}>
-        <Field campoImagem={campoImagem}/>
-        <button
-          onClick={trocarImagem}
-          style={{
-            position: 'absolute',
-            top: '0px',
-            left: '0px',
-            fontSize: '15px',
-            background: 'transparent',
-            border: 'none',
-            cursor: 'pointer',
-          }}
-        >
-          🔄
-        </button>
+        <Field/>
       </DndProvider>
     </div>
   );
