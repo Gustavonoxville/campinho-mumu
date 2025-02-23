@@ -1,14 +1,17 @@
 {
   "files": {
     "main.css": "/campinho-mumu/static/css/main.e6c13ad2.css",
-    "main.js": "/campinho-mumu/static/js/main.2ff553f2.js",
+    "main.js": "/campinho-mumu/static/js/main.652985f5.js",
     "static/js/787.891a14d3.chunk.js": "/campinho-mumu/static/js/787.891a14d3.chunk.js",
     "static/media/fuzato.png": "/campinho-mumu/static/media/fuzato.de8e18c3164f6d4446fa.png",
     "static/media/oliveira.png": "/campinho-mumu/static/media/oliveira.bd93a3e3f339e131867c.png",
+    "static/media/nuno.png": "/campinho-mumu/static/media/nuno.eff093b043a0e22091da.png",
+    "static/media/garre.png": "/campinho-mumu/static/media/garre.1fc84ee6d7a1e69825ce.png",
     "static/media/couto.png": "/campinho-mumu/static/media/couto.3f564fbfc2da832af9e2.png",
     "static/media/field4.svg": "/campinho-mumu/static/media/field4.ce1bbd06dc53c6c5e0bc57c5032aca3f.svg",
     "static/media/jv.png": "/campinho-mumu/static/media/jv.0017ea987134550f6b03.png",
     "static/media/tche.png": "/campinho-mumu/static/media/tche.162d7bd44b360109b69d.png",
+    "static/media/loide.png": "/campinho-mumu/static/media/loide.e86dcb649fafd1d9dc3b.png",
     "static/media/freitas.png": "/campinho-mumu/static/media/freitas.ed905ace60b5f30f2b1a.png",
     "static/media/alegria.png": "/campinho-mumu/static/media/alegria.a240ae7f9f2dcf1f72d2.png",
     "static/media/zuka.png": "/campinho-mumu/static/media/zuka.1f7d5be40e7afd59eacc.png",
@@ -21,6 +24,7 @@
     "static/media/brunol.png": "/campinho-mumu/static/media/brunol.626ebeb139dbd2634817.png",
     "static/media/ly.png": "/campinho-mumu/static/media/ly.8f659b4d509f8ad7a5e2.png",
     "static/media/souza.png": "/campinho-mumu/static/media/souza.810e25920b1496f6caa9.png",
+    "static/media/carille.png": "/campinho-mumu/static/media/carille.71dd0fe0a68fda9eba0f.png",
     "static/media/gb.png": "/campinho-mumu/static/media/gb.4eb298c70d2ae014691d.png",
     "static/media/jpm.png": "/campinho-mumu/static/media/jpm.3836b5ec856e1471bf9d.png",
     "static/media/jean.png": "/campinho-mumu/static/media/jean.961f793b710e24e0ea71.png",
@@ -32,6 +36,7 @@
     "static/media/jardim.png": "/campinho-mumu/static/media/jardim.ae28a7280cef59e0c186.png",
     "static/media/pr.png": "/campinho-mumu/static/media/pr.c930ca1420ccd118a577.png",
     "static/media/sforza.png": "/campinho-mumu/static/media/sforza.1ef418a3f7395a19fa6f.png",
+    "static/media/euder.png": "/campinho-mumu/static/media/euder.6231d5b6a52f8648382f.png",
     "static/media/leandrinho.png": "/campinho-mumu/static/media/leandrinho.278fd460f416e273d6b7.png",
     "static/media/lucase.png": "/campinho-mumu/static/media/lucase.90590abdbff712b5a33e.png",
     "static/media/ph.png": "/campinho-mumu/static/media/ph.12cf002929e8c10eaad9.png",
@@ -58,11 +63,11 @@
     "static/media/8.svg": "/campinho-mumu/static/media/8.3e387385a95b44485c6a957c13600060.svg",
     "static/media/9.svg": "/campinho-mumu/static/media/9.487107596d399f5bdf79407893a200b0.svg",
     "main.e6c13ad2.css.map": "/campinho-mumu/static/css/main.e6c13ad2.css.map",
-    "main.2ff553f2.js.map": "/campinho-mumu/static/js/main.2ff553f2.js.map",
+    "main.652985f5.js.map": "/campinho-mumu/static/js/main.652985f5.js.map",
     "787.891a14d3.chunk.js.map": "/campinho-mumu/static/js/787.891a14d3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.2ff553f2.js"
+    "static/js/main.652985f5.js"
   ]
 }
