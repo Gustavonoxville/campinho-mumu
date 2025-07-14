@@ -3,7 +3,6 @@ import { DndProvider, useDrag, useDrop } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import campoImage from './field4.svg';
 
-import capasso from './jogadores/capasso.png';
 import jv from './jogadores/jv.png';
 import cocao from './jogadores/cocao.png';
 import pablo from './jogadores/pablo.png';
@@ -13,8 +12,6 @@ import jardim from './jogadores/jardim.png';
 import lgus from './jogadores/lg.png';
 import ly from './jogadores/ly.png';
 import paulinho from './jogadores/paulinho.png';
-import payet from './jogadores/payet.png';
-import lucca from './jogadores/lucca.png';
 import ph from './jogadores/ph.png';
 import piton from './jogadores/piton.png';
 import puma from './jogadores/puma.png';
@@ -23,7 +20,6 @@ import jpm from './jogadores/jpm.png';
 import tche from './jogadores/tche.png';
 import adson from './jogadores/adson.png';
 import vegetti from './jogadores/vegetti.png';
-import zegabriel from './jogadores/zegabriel.png';
 import semft from './jogadores/semft.png';
 import c1 from './jogadores/1.svg';
 import c2 from './jogadores/2.svg';
@@ -52,17 +48,14 @@ import sforza from './jogadores/sforza.png';
 import leandrinho from './jogadores/leandrinho.png';
 import estrella from './jogadores/estrella.png';
 import victorl from './jogadores/victorl.png';
-import lucase from './jogadores/lucase.png';
 import hugo from './jogadores/hugo.png';
 import couto from './jogadores/couto.png';
 import texeira from './jogadores/texeira.png';
-import souza from './jogadores/souza.png';
 import gb from './jogadores/gb.png';
 import jean from './jogadores/jean.png';
 import max from './jogadores/max.png';
 import riquelme from './jogadores/riquelme.png';
 import brunol from './jogadores/brunol.png';
-import alegria from './jogadores/alegria.png';
 import oliveira from './jogadores/oliveira.png';
 import freitas from './jogadores/freitas.png';
 import pr from './jogadores/pr.png';
@@ -73,6 +66,7 @@ import loide from './jogadores/loide.png';
 import garre from './jogadores/garre.png';
 import euder from './jogadores/euder.png';
 import diniz from './jogadores/diniz.png';
+import tm from './jogadores/tm.png';
 
 const containerStyle = {
   width: '1550px',
@@ -116,41 +110,34 @@ const playersList = [
   { id: 12, nome: "Paulo Ricardo", imagem: pr, hasBorder: true, hasNumber: true, number: 32, nota: null},
   { id: 14, nome: "Piton", imagem: piton, hasBorder: true, hasNumber: true, number: 6, nota: null},
   { id: 24, nome: "Victor L.", imagem: victorl, hasBorder: true, hasNumber: true, number: 12, nota: null},
-  /*{ id: 69, nome: "Leandrinho", imagem: leandrinho, hasBorder: true, hasNumber: true, number: 66, nota: null},*/
+  { id: 69, nome: "Leandrinho", imagem: leandrinho, hasBorder: true, hasNumber: true, number: 66, nota: null},
   { id: 13, nome: "Riquelme", imagem: riquelme, hasBorder: true, hasNumber: true, number: 36, nota: null},
     /*{ id: 18, nome: "Lucas E.", imagem: lucase, hasBorder: true, hasNumber: true, number: 58, nota: null},*/
-    /*{ id: 19, nome: "Zé Gabriel", imagem: zegabriel, hasBorder: true, hasNumber: true, number: 23, nota: null},*/
   { id: 79, nome: "Euder", imagem: euder, hasBorder: true, hasNumber: true, number: 70},
   { id: 61, nome: "Hugo M.", imagem: hugo, hasBorder: true, hasNumber: true, number: 25, nota: null}, 
     /*{ id: 15, nome: "JP Murilo", imagem: jpm , hasBorder: true, hasNumber: true, number: 98, nota: null},*/
+  { id: 18, nome: "T. Mendes", imagem: tm, hasBorder: true, hasNumber: true, number: 23, nota: null},
   { id: 17, nome: "M. Cocão", imagem: cocao , hasBorder: true, hasNumber: true, number: 85, nota: null},
-    /*{ id: 67, nome: "De Lucca", imagem: lucca, hasBorder: true, hasNumber: true, number: 27, nota: null},*/
   { id: 29, nome: "Sforza", imagem: sforza, hasBorder: true, hasNumber: true, number: 20, nota: null},
-  { id: 62, nome: "Estrella", imagem: estrella, hasBorder: true, hasNumber: true, number: 14, nota: null},
-  { id: 20, nome: "Payet", imagem: payet, hasBorder: true, hasNumber: true, number: 10, nota: null},
-  { id: 73, nome: "Maxime", imagem: max, hasBorder: true, hasNumber: true, number: 26, nota: null},
+  /*{ id: 73, nome: "Maxime", imagem: max, hasBorder: true, hasNumber: true, number: 26, nota: null},*/
   { id: 21, nome: "Tchê Tchê", imagem: tche, hasBorder: true, hasNumber: true, number: 3, nota: null},
   { id: 22, nome: "Paulinho", imagem: paulinho, hasBorder: true, hasNumber: true, number: 18, nota: null},
   { id: 23, nome: "Jair", imagem: jair, hasBorder: true, hasNumber: true, number: 8, nota: null},
-  { id: 63, nome: "Coutinho", imagem: couto, hasBorder: true, hasNumber: true, number: 11, nota: null},
+  { id: 62, nome: "Estrella", imagem: estrella, hasBorder: true, hasNumber: true, number: 14, nota: null},
+  { id: 63, nome: "Coutinho", imagem: couto, hasBorder: true, hasNumber: true, number: 10, nota: null},
+  { id: 76, nome: "Garré", imagem: garre, hasBorder: true, hasNumber: true, number: 15},
   { id: 74, nome: "Zuccarello", imagem: zuka, hasBorder: true, hasNumber: true, number: 30, nota: null},
   { id: 27, nome: "Adson", imagem: adson, hasBorder: true, hasNumber: true, number: 28, nota: null},
   { id: 26, nome: "Vegetti", imagem: vegetti, hasBorder: true, hasNumber: true, number: 99, nota: null},
   { id: 31, nome: "Rayan", imagem: rayan, hasBorder: true, hasNumber: true, number: 77, nota: null},
-  { id: 76, nome: "Garré", imagem: garre, hasBorder: true, hasNumber: true, number: 15},
   { id: 77, nome: "Nuno", imagem: nuno, hasBorder: true, hasNumber: true, number: 17},
   { id: 78, nome: "Loide", imagem: loide, hasBorder: true, hasNumber: true, number: 45},
   { id: 33, nome: "David", imagem: david, hasBorder: true, hasNumber: true, number: 7},
-  { id: 68, nome: "Alegria", imagem: alegria, hasBorder: true, hasNumber: true, number: 16, nota: null},
-  /*{ id: 74, nome: "Emerson", imagem: emerson, hasBorder: true, hasNumber: true, number: 17, nota: null},*/
   { id: 70, nome: "Texeira", imagem: texeira, hasBorder: true, hasNumber: true, number:90, nota: null},
   { id: 25, nome: "Bruno L.", imagem: brunol , hasBorder: true, hasNumber: true, number: 72, nota: null},
   { id: 71, nome: "GB", imagem: gb, hasBorder: true, hasNumber: true, number:19, nota: null},
   { id: 72, nome: "Jean David", imagem: jean, hasBorder: true, hasNumber: true, number: 21, nota: null},
   { id: 80, nome: "Diniz", imagem: diniz, hasBorder: true, hasNumber: false, number: 70},
-  /*{ id: 28, nome: "Serginho", imagem: serginho, hasBorder: true, hasNumber: true, number: 70, nota: null},*/
-  /*{ id: 66, nome: "André Silva", imagem: andres, hasBorder: true, hasNumber: false, number: 11},*/
-  /*{ id: 34, nome: "Klopp", imagem: serjao, hasBorder: true, hasNumber: false, number: 11},*/
   { id: 35, nome: "", imagem: semft,hasBorder: false, hasNumber: false, number: 0, nota: null},
   { id: 36, nome: "", imagem: semft,hasBorder: false, hasNumber: false, number: 0, nota: null},
   { id: 37, nome: "", imagem: semft,hasBorder: false, hasNumber: false, number: 0, nota: null},
