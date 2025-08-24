@@ -3,13 +3,12 @@ import { DndProvider, useDrag, useDrop } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import campoImage from './field4.svg';
 
-import jv from './jogadores/jv.png';
+
 import cocao from './jogadores/cocao.png';
 import pablo from './jogadores/pablo.png';
 import fuzato from './jogadores/fuzato.png';
 import jair from './jogadores/jair.png';
 import jardim from './jogadores/jardim.png';
-import lgus from './jogadores/lg.png';
 import ly from './jogadores/ly.png';
 import paulinho from './jogadores/paulinho.png';
 import ph from './jogadores/ph.png';
@@ -67,6 +66,9 @@ import garre from './jogadores/garre.png';
 import euder from './jogadores/euder.png';
 import diniz from './jogadores/diniz.png';
 import tm from './jogadores/tm.png';
+import barros from './jogadores/barros.png';
+import gomez from './jogadores/gomez.png';
+import robert from './jogadores/robert.png';
 
 const containerStyle = {
   width: '1550px',
@@ -95,10 +97,8 @@ const playersList = [
   { id: 1, nome: "Jardim", imagem: jardim, hasBorder: true, hasNumber: true, number: 1, nota: null},
   { id: 2, nome: "Fuzato", imagem: fuzato , hasBorder: true, hasNumber: true, number: 13, nota: null},
   { id: 3, nome: "Pablo", imagem: pablo, hasBorder: true, hasNumber: true, number: 37, nota: null},
-  { id: 5, nome: "J. Victor", imagem: jv, hasBorder: true, hasNumber: true, number: 38, nota: null},
+  { id: 5, nome: "Robert", imagem: robert, hasBorder: true, hasNumber: true, number: 5, nota: null},
   { id: 75, nome: "Lemos", imagem: lemos, hasBorder: true, hasNumber: true, number: 4, nota: null},
-  /*{ id: 6, nome: "Capasso", imagem: capasso, hasBorder: true, hasNumber: true, number: 22, nota: null},*/
-  { id: 16, nome: "L. Gustavo", imagem: lgus, hasBorder: true, hasNumber: true, number: 44, nota: null},
   { id: 4, nome: "Freitas", imagem: freitas, hasBorder: true, hasNumber: true, number: 43, nota: null},
   /*{ id: 65, nome: "Souza", imagem: souza, hasBorder: true, hasNumber: true, number: 5, nota: null},*/
   /*{ id: 64, nome: "Lyncon", imagem: ly, hasBorder: true, hasNumber: true, number: 33, nota: null},*/
@@ -112,9 +112,9 @@ const playersList = [
   { id: 24, nome: "Victor L.", imagem: victorl, hasBorder: true, hasNumber: true, number: 12, nota: null},
   { id: 69, nome: "Leandrinho", imagem: leandrinho, hasBorder: true, hasNumber: true, number: 66, nota: null},
   { id: 13, nome: "Riquelme", imagem: riquelme, hasBorder: true, hasNumber: true, number: 36, nota: null},
-    /*{ id: 18, nome: "Lucas E.", imagem: lucase, hasBorder: true, hasNumber: true, number: 58, nota: null},*/
   { id: 79, nome: "Euder", imagem: euder, hasBorder: true, hasNumber: true, number: 70},
   { id: 61, nome: "Hugo M.", imagem: hugo, hasBorder: true, hasNumber: true, number: 25, nota: null}, 
+  { id: 9, nome: "Barros", imagem: barros, hasBorder: true, hasNumber: true, number: 88, nota: null},
     /*{ id: 15, nome: "JP Murilo", imagem: jpm , hasBorder: true, hasNumber: true, number: 98, nota: null},*/
   { id: 18, nome: "T. Mendes", imagem: tm, hasBorder: true, hasNumber: true, number: 23, nota: null},
   { id: 17, nome: "M. Cocão", imagem: cocao , hasBorder: true, hasNumber: true, number: 85, nota: null},
@@ -130,6 +130,7 @@ const playersList = [
   { id: 27, nome: "Adson", imagem: adson, hasBorder: true, hasNumber: true, number: 28, nota: null},
   { id: 26, nome: "Vegetti", imagem: vegetti, hasBorder: true, hasNumber: true, number: 99, nota: null},
   { id: 31, nome: "Rayan", imagem: rayan, hasBorder: true, hasNumber: true, number: 77, nota: null},
+  { id: 81, nome: "Gomez", imagem: gomez, hasBorder: true, hasNumber: true, number: 11},
   { id: 77, nome: "Nuno", imagem: nuno, hasBorder: true, hasNumber: true, number: 17},
   { id: 78, nome: "Loide", imagem: loide, hasBorder: true, hasNumber: true, number: 45},
   { id: 33, nome: "David", imagem: david, hasBorder: true, hasNumber: true, number: 7},
