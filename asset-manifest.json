@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/campinho-mumu/static/css/main.e6c13ad2.css",
-    "main.js": "/campinho-mumu/static/js/main.144f1eec.js",
+    "main.js": "/campinho-mumu/static/js/main.7c6aeb1a.js",
     "static/js/787.891a14d3.chunk.js": "/campinho-mumu/static/js/787.891a14d3.chunk.js",
     "static/media/diniz.png": "/campinho-mumu/static/media/diniz.3c56c2d00a5d70633190.png",
     "static/media/tm.png": "/campinho-mumu/static/media/tm.09dd1510fa5835416b33.png",
@@ -62,11 +62,11 @@
     "static/media/8.svg": "/campinho-mumu/static/media/8.fe6a0c1efd183375d3ef381e94fdf203.svg",
     "static/media/9.svg": "/campinho-mumu/static/media/9.d3c44000eee41afcbbd277b3a490e903.svg",
     "main.e6c13ad2.css.map": "/campinho-mumu/static/css/main.e6c13ad2.css.map",
-    "main.144f1eec.js.map": "/campinho-mumu/static/js/main.144f1eec.js.map",
+    "main.7c6aeb1a.js.map": "/campinho-mumu/static/js/main.7c6aeb1a.js.map",
     "787.891a14d3.chunk.js.map": "/campinho-mumu/static/js/787.891a14d3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.144f1eec.js"
+    "static/js/main.7c6aeb1a.js"
   ]
 }
