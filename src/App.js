@@ -101,8 +101,8 @@ const playersList = [
   { id: 2, nome: "Fuzato", imagem: fuzato , hasBorder: true, hasNumber: true, number: 13, nota: null},
   { id: 3, nome: "Pablo", imagem: pablo, hasBorder: true, hasNumber: true, number: 37, nota: null},
   { id: 5, nome: "Robert", imagem: robert, hasBorder: true, hasNumber: true, number: 30, nota: null},
-  { id: 6, nome: "Cuesta", imagem: cuesta, hasBorder: true, hasNumber: true, number: 26},
-  { id: 7, nome: "Nathan", imagem: nathan, hasBorder: true, hasNumber: true, number: 22},
+  { id: 6, nome: "Cuesta", imagem: cuesta, hasBorder: true, hasNumber: true, number: 46},
+   /*{ id: 7, nome: "Nathan", imagem: nathan, hasBorder: true, hasNumber: true, number: 22},*/
   { id: 75, nome: "Lemos", imagem: lemos, hasBorder: true, hasNumber: true, number: 4, nota: null},
   { id: 4, nome: "Freitas", imagem: freitas, hasBorder: true, hasNumber: true, number: 43, nota: null},
   /*{ id: 65, nome: "Souza", imagem: souza, hasBorder: true, hasNumber: true, number: 5, nota: null},*/
@@ -112,7 +112,7 @@ const playersList = [
   /*{ id: 9, nome: "Miranda", imagem: miranda , hasBorder: true, hasNumber: true, number: 35},*/
   { id: 10, nome: "Puma", imagem: puma, hasBorder: true, hasNumber: true, number: 2, nota: null},
   { id: 11, nome: "PH", imagem: ph , hasBorder: true, hasNumber: true, number: 96, nota: null},
-  { id: 12, nome: "Paulo Ricardo", imagem: pr, hasBorder: true, hasNumber: true, number: 32, nota: null},
+  { id: 12, nome: "Paulo Ricardo", imagem: pr, hasBorder: true, hasNumber: true, number: 22, nota: null},
   { id: 14, nome: "Piton", imagem: piton, hasBorder: true, hasNumber: true, number: 6, nota: null},
   { id: 24, nome: "Victor L.", imagem: victorl, hasBorder: true, hasNumber: true, number: 12, nota: null},
   { id: 69, nome: "Leandrinho", imagem: leandrinho, hasBorder: true, hasNumber: true, number: 66, nota: null},
