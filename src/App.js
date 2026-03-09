@@ -1,7 +1,7 @@
 import React, { useState , useEffect } from 'react';
 import { DndProvider, useDrag, useDrop } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
-import campoImage from './field4.svg';
+import campoImage from './field7.svg';
 
 import cocao from './jogadores/cocao.png';
 import pablo from './jogadores/pablo.png';
@@ -52,7 +52,7 @@ import nuno from './jogadores/nuno.png';
 import loide from './jogadores/loide.png';
 import garre from './jogadores/garre.png';
 import euder from './jogadores/euder.png';
-import diniz from './jogadores/diniz.png';
+import renato from './jogadores/renato.png';
 import tm from './jogadores/tm.png';
 import barros from './jogadores/barros.png';
 import gomez from './jogadores/gomez.png';
@@ -73,8 +73,8 @@ import spinelli from './jogadores/spinelli.png';
 import cuiabano from './jogadores/cuiabano.png';
 
 const containerStyle = {
-  width: '1550px',
-  height: '1300px',
+  width: '1920px',
+  height: '960px',
   margin: 'auto',
   backgroundColor: 'rgb(13, 120, 71)',
 };
@@ -105,7 +105,7 @@ const playersList = [
   { id: 5, nome: "Robert", imagem: robert, hasBorder: true, hasNumber: true, number: 30, nota: null},
   { id: 4, nome: "Freitas", imagem: freitas, hasBorder: true, hasNumber: true, number: 43, nota: null},
   { id: 653, nome: "Walace F", imagem: walace, hasBorder: true, hasNumber: true, number: 64, nota: null},
-  { id: 64, nome: "Lyncon", imagem: ly, hasBorder: true, hasNumber: true, number: 33, nota: null},
+   /*{ id: 64, nome: "Lyncon", imagem: ly, hasBorder: true, hasNumber: true, number: 33, nota: null},*/
    /*{ id: 8, nome: "Oliveira", imagem: oliveira , hasBorder: true, hasNumber: true, number: 29, nota: null},*/
   /*{ id: 8, nome: "Zé Vitor", imagem: zevitor, hasBorder: true, hasNumber: true, number: 44},*/
   /*{ id: 9, nome: "Miranda", imagem: miranda , hasBorder: true, hasNumber: true, number: 35},*/
@@ -114,7 +114,7 @@ const playersList = [
   /*{ id: 12, nome: "Paulo Ricardo", imagem: pr, hasBorder: true, hasNumber: true, number: 22, nota: null},*/
   { id: 13, nome: "Cuiabano", imagem: cuiabano, hasBorder: true, hasNumber: true, number: 66, nota: null},
   { id: 14, nome: "Piton", imagem: piton, hasBorder: true, hasNumber: true, number: 6, nota: null},
-  { id: 24, nome: "Victor L.", imagem: victorl, hasBorder: true, hasNumber: true, number: 12, nota: null},
+   /*{ id: 24, nome: "Victor L.", imagem: victorl, hasBorder: true, hasNumber: true, number: 12, nota: null},*/
   { id: 69, nome: "Mutano", imagem: mutano, hasBorder: true, hasNumber: true, number: 60, nota: null},
   /*{ id: 79, nome: "Euder", imagem: euder, hasBorder: true, hasNumber: true, number: 70},*/
   { id: 23, nome: "Jair", imagem: jair, hasBorder: true, hasNumber: true, number: 8, nota: null},
@@ -122,13 +122,13 @@ const playersList = [
   { id: 61, nome: "Hugo M.", imagem: hugo, hasBorder: true, hasNumber: true, number: 25, nota: null}, 
   { id: 9, nome: "Barros", imagem: barros, hasBorder: true, hasNumber: true, number: 88, nota: null},
   /*{ id: 15, nome: "JP Murilo", imagem: jpm , hasBorder: true, hasNumber: true, number: 98, nota: null},*/
-  { id: 18, nome: "T. Mendes", imagem: tm, hasBorder: true, hasNumber: true, number: 23, nota: null},  
+  { id: 18, nome: "Mendes", imagem: tm, hasBorder: true, hasNumber: true, number: 23, nota: null},  
   /*{ id: 29, nome: "Sforza", imagem: sforza, hasBorder: true, hasNumber: true, number: 20, nota: null},*/
   /*{ id: 73, nome: "Maxime", imagem: max, hasBorder: true, hasNumber: true, number: 26, nota: null},*/
   { id: 21, nome: "Tchê Tchê", imagem: tche, hasBorder: true, hasNumber: true, number: 3, nota: null},
-  { id: 62, nome: "Estrella", imagem: estrella, hasBorder: true, hasNumber: true, number: 14, nota: null},
-  { id: 63, nome: "Coutinho", imagem: couto, hasBorder: true, hasNumber: true, number: 10, nota: null},
-  { id: 22, nome: "Rojas", imagem: rojas, hasBorder: true, hasNumber: true, number: 29, nota: null},
+   /*{ id: 62, nome: "Estrella", imagem: estrella, hasBorder: true, hasNumber: true, number: 14, nota: null},*/
+   /*{ id: 63, nome: "Coutinho", imagem: couto, hasBorder: true, hasNumber: true, number: 10, nota: null},*/
+  { id: 22, nome: "Rojas", imagem: rojas, hasBorder: true, hasNumber: true, number: 10, nota: null},
   { id: 65, nome: "França", imagem: franca, hasBorder: true, hasNumber: true, number: 20},
   { id: 31, nome: "Marino", imagem: hines, hasBorder: true, hasNumber: true, number: 18, nota: null},
   { id: 81, nome: "Gomez", imagem: gomez, hasBorder: true, hasNumber: true, number: 11},
@@ -137,14 +137,14 @@ const playersList = [
   { id: 33, nome: "David", imagem: david, hasBorder: true, hasNumber: true, number: 7},
   { id: 70, nome: "Brenner", imagem: brenner, hasBorder: true, hasNumber: true, number:20, nota: null},
   { id: 73, nome: "Spinelli", imagem: spinelli, hasBorder: true, hasNumber: true, number: 77, nota: null},
-  { id: 71, nome: "GB", imagem: gb, hasBorder: true, hasNumber: true, number:19, nota: null},
+   /*{ id: 71, nome: "GB", imagem: gb, hasBorder: true, hasNumber: true, number:19, nota: null},*/
   { id: 74, nome: "Zuccarello", imagem: zuka, hasBorder: true, hasNumber: true, number: 31, nota: null},
   { id: 26, nome: "Minete", imagem: minete, hasBorder: true, hasNumber: true, number: 90, nota: null},
   /*{ id: 78, nome: "Loide", imagem: loide, hasBorder: true, hasNumber: true, number: 45},*/
   { id: 25, nome: "Bruno L.", imagem: brunol , hasBorder: true, hasNumber: true, number: 72, nota: null},
   { id: 72, nome: "Andrey F", imagem: andreyf, hasBorder: true, hasNumber: true, number: 74, nota: null},
   { id: 76, nome: "Locio", imagem: locio, hasBorder: true, hasNumber: true, number: 15},
-  { id: 80, nome: "Diniz", imagem: diniz, hasBorder: true, hasNumber: false, number: 70},
+  { id: 80, nome: "R. Gaúcho", imagem: renato, hasBorder: true, hasNumber: false, number: 70},
   { id: 35, nome: "", imagem: semft,hasBorder: false, hasNumber: false, number: 0, nota: null},
   { id: 36, nome: "", imagem: semft,hasBorder: false, hasNumber: false, number: 0, nota: null},
   { id: 37, nome: "", imagem: semft,hasBorder: false, hasNumber: false, number: 0, nota: null},
@@ -161,7 +161,7 @@ const playersList = [
   { id: 47, nome: "", imagem: c9, hasBorder: true, hasNumber: false, number: 0, nota: null},
   { id: 48, nome: "", imagem: c10, hasBorder: true, hasNumber: false, number: 0, nota: null},
   { id: 49, nome: "", imagem: c11, hasBorder: true, hasNumber: false, number: 0, nota: null},
-  { id: 50, nome: "", imagem: v1, hasBorder: true, hasNumber: false, number: 0, nota: null},
+  /*{ id: 50, nome: "", imagem: v1, hasBorder: true, hasNumber: false, number: 0, nota: null},
   { id: 51, nome: "", imagem: v2, hasBorder: true, hasNumber: false, number: 0, nota: null},
   { id: 52, nome: "", imagem: v3, hasBorder: true, hasNumber: false, number: 0, nota: null},
   { id: 53, nome: "", imagem: v4, hasBorder: true, hasNumber: false, number: 0, nota: null},
@@ -171,21 +171,30 @@ const playersList = [
   { id: 57, nome: "", imagem: v8, hasBorder: true, hasNumber: false, number: 0, nota: null},
   { id: 58, nome: "", imagem: v9, hasBorder: true, hasNumber: false, number: 0, nota: null},
   { id: 59, nome: "", imagem: v10, hasBorder: true, hasNumber: false, number: 0, nota: null},
-  { id: 60, nome: "", imagem: v11, hasBorder: true, hasNumber: false, number: 0, nota: null},
+  { id: 60, nome: "", imagem: v11, hasBorder: true, hasNumber: false, number: 0, nota: null},*/
  
 ];
 
 const playerData = () => {
+
+  const screenWidth = 1920; // Largura do container
+  const halfScreenWidth = screenWidth / 2; // Metade da tela
+  const playerWidth = 100; // Largura de cada jogador (ajustada para espaçamento)
+  const startLeft = 60; // Posição inicial na lateral esquerda
+  const startTop = 60; // Posição inicial no topo
+  const rowHeight = 150; // Distância entre as linhas de jogadores
+  const playersPerRow = Math.floor((halfScreenWidth - startLeft) / playerWidth); // Número de jogadores por linha
+
   const players = playersList.map((player, index) => ({
     id: player.id,
-    top: 850 + Math.floor(index / 15) * 150 + 30, // Ajuste para quebrar a linha a cada 15 jogadores
-    left: (index % 15) * 105 + 135, // Ajuste para posicionar os jogadores na linha correta
+    top: startTop + Math.floor(index / playersPerRow) * rowHeight,
+    left: startLeft + (index % playersPerRow) * playerWidth,
     name: player.nome,
     image: player.imagem,
     hasBorder: player.hasBorder,
     hasNumber: player.hasNumber,
     number: player.number,
-     nota: player.nota, 
+    nota: player.nota, 
   }));
 
   return [...players];  
@@ -237,8 +246,8 @@ const DraggablePlayer = ({ id, left, top, name, image, hasBorder, hasNumber, num
 
   const playerImageContainerStyle = {
     position: 'relative', // Adicione position relative para que o número seja posicionado absolutamente em relação a este contêiner
-    width: '102px',
-    height: '102px',
+    width: '80px',
+    height: '80px',
     borderRadius: '50%',
     overflow: 'hidden',
     border: hasBorder ? '2px solid #373737' : 'none', // Adicione a borda aqui
