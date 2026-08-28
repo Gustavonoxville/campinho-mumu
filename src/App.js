@@ -75,6 +75,7 @@ import sosa from './jogadores/sosa.png';
 import colidio from './jogadores/colidio.png';
 import paulinho from './jogadores/paulinho.png';
 import rrique from './jogadores/rrique.png';
+import duarte from './jogadores/duarte.png';
 
 const containerStyle = {
   width: '1920px',
@@ -141,7 +142,7 @@ const playersList = [
   { id: 33, nome: "David", imagem: david, hasBorder: true, hasNumber: true, number: 7},
   { id: 70, nome: "Brenner", imagem: brenner, hasBorder: true, hasNumber: true, number:20, nota: null},
   { id: 73, nome: "Spinelli", imagem: spinelli, hasBorder: true, hasNumber: true, number: 77, nota: null},
-   /*{ id: 71, nome: "GB", imagem: gb, hasBorder: true, hasNumber: true, number:19, nota: null},*/
+  { id: 71, nome: "Duarte", imagem: duarte, hasBorder: true, hasNumber: true, number:19, nota: null},
   { id: 74, nome: "Zuccarello", imagem: zuka, hasBorder: true, hasNumber: true, number: 31, nota: null},
   { id: 26, nome: "Minete", imagem: minete, hasBorder: true, hasNumber: true, number: 90, nota: null},
   /*{ id: 78, nome: "Loide", imagem: loide, hasBorder: true, hasNumber: true, number: 45},*/
